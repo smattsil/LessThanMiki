@@ -15,10 +15,10 @@ Scan the QR code with a compatible Expo Go app on iOS or Android. Use `npm run i
 
 ## Features
 
-- Chats and You bottom navigation tabs.
+- Chats screen and bottom navigation tab.
 - One contact, Miki, with a blank avatar and searchable chat row.
 - Local conversation with multiline message entry, date separators, timestamps, and persistent device storage.
-- Placeholder You page and automatic light/dark appearance.
+- Automatic light/dark appearance.
 
 This is a local prototype: messages are not delivered to another person. The checkmark indicates a locally saved message. There is no backend, login, automatic reply, or end-to-end encryption implementation. Messages persist in unencrypted device storage; clearing application data removes them.
 
@@ -29,7 +29,7 @@ npm run typecheck
 npx expo export --platform all
 ```
 
-Device smoke check: open Miki, send a message, return to Chats, relaunch the app and confirm persistence. Search for Miki, switch to You, and change the device appearance to verify both themes. Native device execution requires an emulator or physical device.
+Device smoke check: open Miki, send a message, return to Chats, relaunch the app and confirm persistence. Search for Miki and change the device appearance to verify both themes. Native device execution requires an emulator or physical device.
 
 ## iOS Liquid Glass
 
