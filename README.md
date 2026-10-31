@@ -30,3 +30,9 @@ npx expo export --platform all
 ```
 
 Device smoke check: open Miki, send a message, return to Chats, relaunch the app and confirm persistence. Search for Miki, switch to You, and change the device appearance to verify both themes. Native device execution requires an emulator or physical device.
+
+## iOS Liquid Glass
+
+On supported iOS 26+ devices and compatible Expo Go/native builds, navigation, search, the chat header, and the message field use native Liquid Glass. Light and dark appearance follow the system. Runtime availability checks prevent rendering glass on unsupported iOS versions; enabling iOS Reduce Transparency switches to opaque controls, including when changed while the app is open.
+
+Android and web use a separate component implementation with ordinary React Native views; they do not import the iOS glass module. No Android glass support is required. After updating the project, run `npm ci` and restart Expo. Custom development builds must be rebuilt when adding this native dependency.
